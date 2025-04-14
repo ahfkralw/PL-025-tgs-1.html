@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pelatihan HTML</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      body {
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      header {
+        background: linear-gradient(135deg, #034694, #102f6b);
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+      }
+
+      header img {
+        width: 100px;
+        margin-bottom: 20px;
+      }
+
+      nav {
+        background-color: #001f5b;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 10px 20px;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      nav a:hover {
+        color: #ffd700;
+      }
+
+      section {
+        padding: 60px 20px;
+        text-align: center;
+      }
+
+      .hero {
+        background: url("https://upload.wikimedia.org/wikipedia/commons/d/d4/Stamford_Bridge_-_West_Stand.jpg")
+          no-repeat center/cover;
+        color: white;
+        padding: 100px 20px;
+        background-blend-mode: multiply;
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+
+      .hero h2 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 25px;
+      }
+
+      .hero button {
+        background-color: #034694;
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        font-size: 1rem;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .hero button:hover {
+        background-color: #012d83;
+      }
+
+      .features,
+      .services,
+      .testimoni-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
+      }
+
+      .feature-box,
+      .service-box,
+      .testimoni-box {
+        background-color: white;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        max-width: 280px;
+        transition: transform 0.3s ease;
+      }
+
+      .feature-box:hover,
+      .service-box:hover,
+      .testimoni-box:hover {
+        transform: translateY(-5px);
+      }
+
+      .service-box:nth-child(2) {
+        background-color: #e0f0ff;
+      }
+
+      #contact {
+        background-color: #001f5b;
+        color: white;
+      }
+
+      footer {
+        background-color: #001a3f;
+        color: #ffd700;
+        text-align: center;
+        padding: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .features,
+        .services,
+        .testimoni-wrapper {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .hero h2 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+        alt="Logo Chelsea FC"
+      />
+      <h1>PELATIHAN HTML BERKELAS</h1>
+      <p>Semangat Belajar untuk Masa Depan Digitalmu</p>
+    </header>
+
+    <nav>
+      <a href="#home">Beranda</a>
+      <a href="#about">Tentang</a>
+      <a href="#services">Layanan</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+
+    <section id="home" class="hero">
+      <h2>Ayo Bangun Skill Codingmu Sekarang Juga</h2>
+      <p>Belajar HTML Bisa jadi Hal Menyenangkan Dan Menarik</p>
+      <button>Gabung Sekarang</button>
+    </section>
+
+    <section id="about">
+      <h2>Tentang Program</h2>
+      <p>
+        Pelatihan HTML interaktif—karena kami percaya berkembang itu penting,
+        bukan cuma viral pas kalah kayak klub merah yang katanya 'besar' itu
+      </p>
+      <div class="features">
+        <div class="feature-box">
+          <h3>Visual Menarik</h3>
+          <p>Pembelajaran disampaikan dengan tampilan yang idealis.</p>
+        </div>
+        <div class="feature-box">
+          <h3>Praktik Langsung</h3>
+          <p>Belajar dari studi kasus dan latihan langsung.</p>
+        </div>
+        <div class="feature-box">
+          <h3>Tanpa Biaya</h3>
+          <p>Seluruh modul bisa diakses gratis untuk semua.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Modul Pelatihan</h2>
+      <div class="services">
+        <div class="service-box">
+          <h3>HTML Dasar</h3>
+          <p>Pengenalan tag dan struktur dokumen HTML.</p>
+        </div>
+        <div class="service-box">
+          <h3>Form HTML</h3>
+          <p>Buat form registrasi, login, dan pengumpulan data.</p>
+        </div>
+        <div class="service-box">
+          <h3>Tabel HTML</h3>
+          <p>Gunakan tabel untuk menyusun data secara rapi.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Testimoni Peserta</h2>
+      <div class="testimoni-wrapper">
+        <div class="testimoni-box">
+          <p>
+            "Belajar HTML di sini progresnya jelas — gak kayak Arsenal yang
+            katanya progres, tapi ujung-ujungnya 4 besar juga syukur."
+          </p>
+          <p><strong>- stev, pengamat</strong></p>
+        </div>
+        <div class="testimoni-box">
+          <p>
+            "Suka banget sama desainnya. Lebih Baik Terlihat Cupu Dari Pada jadi
+            fans Emyu!"
+          </p>
+          <p><strong>- risal, penikmat</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Hubungi Kami</h2>
+      <p>Email: chelseajuaraligainggris@pelatihanhtml.com</p>
+      <p>Telepon: 08112345678</p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Pelatihan HTML Berkelas. Blue is the Colour!</p>
+    </footer>
+  </body>
+</html>
+>
